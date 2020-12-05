@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center of Screen*/
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Button */
+
+.btn-special {
+  background-color: rgb(236, 240, 240);
+  color: rgb(51, 68, 85);
+  border-color: rgb(51, 68, 85);
+  border-width: 3px;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: larger;
+  margin-bottom: 20px;
+}
+
+.btn-special:hover {
+  background-color: rgb(199, 199, 199);
+  cursor: pointer;
+}
+
+.btn-special:active {
+  background-color: rgb(51, 68, 85);
+  color: rgb(236, 240, 240);
+  border-color: rgb(199, 199, 199);
+}
+
+.btn-special a {
+  text-decoration: none;
+  color: rgb(51, 68, 85);
+}
+
+.btn-special a:visited {
+  text-decoration: none;
+  color: rgb(51, 68, 85);
+}
+
+.btn-special a:active {
+  color: rgb(236, 240, 240);
+}
+
+/* */
+a img {
+  width: 70px;
+  border-radius: 50%;
+  position: relative;
+  top: 10%;
+  left: 25px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  color: rgb(51, 68, 85);
+}
+
+.open-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+/* Nav Menu; 3 Divs */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+  transform: translateX(0%);
+}
+
+.nav-color1 {
+  height: 100vh;
+  background-color: rgb(51, 68, 85);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0s;
+  border-radius: 6px;
+}
+
+.nav-color1.visible {
+  transition-delay: 0s;
+}
+
+.nav-color2 {
+  height: 100vh;
+  background-color: rgb(104, 114, 124);
+  transition-delay: 0.2s;
+  width: 95%;
+  border-radius: 6px;
+}
+
+.nav-color2.visible {
+  transition-delay: 0.2s;
+}
+
+.nav-color3 {
+  height: 100vh;
+  background-color: rgb(199, 199, 199);
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+  border-radius: 6px;
+}
+
+.nav-color3.visible {
+  transition-delay: 0.4s;
+}
+
+.close-btn {
+  opacity: 0.5;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+  top: 10%;
+}
+
+.list li {
+  margin-left: 20px;
+}
+
+.list li a {
+  color: rgb(51, 68, 85);
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.list li a:hover {
+  text-decoration: underline;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 25px;
+}
+
+.note {
+  width: 200px;
+  color: rgb(51, 68, 85);
+}
+
+.bottom {
+  position: fixed;
+  top: 90%;
+  font-size: 14px;
+}
